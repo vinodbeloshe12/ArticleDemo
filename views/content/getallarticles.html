@@ -1,0 +1,26 @@
+<style>
+
+  .pgcol{
+    color: white;
+    background-color: red;
+  }
+  .pg{
+     margin: 0 4px;
+     position: relative;
+     float: left;
+     padding: 8px 16px;
+     margin-left: -1px;
+     line-height: 1.42857143;
+     text-decoration: none;
+     border: 1px solid #ddd;
+   }</style>
+<div class="container">
+  <h2>List of Articles</h2>
+
+<div class="row" ng-repeat="article in articles">
+          <a href="#/getid/{{article.id}}"><h3>[{{$index + 1}}] {{article.title}}</h3></a>
+    </div>
+    <div class="pagination">
+    <li class="{{page.class}}" ng-repeat="page in pages" ng-click="pagess(page.pageno);">{{page.pageno}}</li>
+  </div>
+</div>

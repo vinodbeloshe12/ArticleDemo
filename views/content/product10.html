@@ -1,0 +1,19 @@
+<div class="jumbotron">
+<table class="table table-bordered">
+  <thead>
+    <tr class="imp"><th>
+<h1><center>{{pro.product.name}}</center></h1></th></tr>
+</thead>
+<tbody>
+  <tr class="info"><td>
+<p><center><b>
+  {{pro.product.description}}
+</b></center></p></td></tr>
+<tr class="info"><td>
+<h2><center>{{pro.product.price|currency}} </center></h2></tr></td>
+<tr><td>
+<div ng-repeat="image in pro.productimage">
+<center>  <img ng-src="{{'http://accessworld.in/admin/uploads/'+image.image}}" alt="" /> </center></td></tr>
+</tbody>
+</div>
+</div>

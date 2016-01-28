@@ -1,0 +1,7 @@
+<h1>{{product.product.name}}</h1>
+<p>
+  {{product.product.description}}
+</p>
+<div ng-repeat="image in product.productimage">
+  <img ng-src="{{'http://accessworld.in/admin/uploads/'+image.image}}" alt="" />
+</div>

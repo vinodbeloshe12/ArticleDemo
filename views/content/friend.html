@@ -1,0 +1,19 @@
+<p>{{rows.length}}
+  Friend{{gets(rows)}}</p>
+<form class="form-horizontal">
+  <span ng-class="{'input-append':addname}">
+
+    <p><input type="text" id="txt" placeholder="add friend" ng-model="addname.name">
+      <button type="submit" value="Add" class="btn btn-primary" ng-click="addrow(addname.name)">Add</button>
+
+      <p/>
+    </span>
+  </form>
+  <table class="table table-striped">
+    <tr ng-repeat="r in rows track by $index">
+      <td>{{$index+1}}</td>
+      <td>{{r}}</td>
+      <td><button class="btn btn-danger" ng-click="deleterow($index)" ><i class="icon-trash icon-white">Delete</i></button></td>
+    </tr>
+  </table>
+  

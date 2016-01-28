@@ -1,0 +1,10 @@
+<div ng-app="firstapp" ng-controller="toolCtrl">
+  <h1>My Todo List</h1>
+  <span>{{remaining()}}of {{todoList.length}}remaining</span>
+  <form ng-submit="todoAdd()">
+  <p><input type="text" height="20" width="50" placeholder="add list" ng-model="inputdata">
+  <input type="submit" value="Add"></p></form>
+  <div ng-repeat="x in todoList">
+  <p><input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span></p></div>
+  <p> <button ng-click="remove()" height="20" width="30 ">Remove List</button></p>
+</div>

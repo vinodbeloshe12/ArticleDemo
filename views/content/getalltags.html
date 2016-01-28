@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>List of Articles</h2>
+<div class="col-md-12">
+<div class="col-md-3">
+  <div ng-repeat="tag in tags">
+          <!-- <a href="#/getid/{{tag.id}}"><h3>[{{$index + 1}}] {{tag.name}}</h3></a> -->
+          <a href="" style="text-decoration:none;" ng-click="getTagBySome(tag.name);">{{tag.name}}&nbsp;</a>
+    </div></div>
+    <div class="col-md-9">
+      <div ng-repeat="article in tagdetail">
+
+      <p><a href="#/getid/{{article.id}}"><h4>[{{$index+1}}] {{article.title}}</h4></a></p>
+      <p><h5>{{article.content}}</h5></p>
+      <p>{{article.timestamp}}</p>
+      </div>
+    </div>
+</div></div>

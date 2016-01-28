@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="row">
+    <form ng-submit="enter()"><input ng-model="search" type="text" height="30" width="30" placeholder="Click to search" list="opt">
+      <datalist id="opt">
+        <option value="Science">
+          <option value="Technology">
+            <option value="Animals">
+              <option value="Energy">
+                <option value="Environment"></datalist>
+                <input type="submit" value="Search" ng-model="abc" ng-click="getSearchArticles(search)">
+              </form>
+            </div>
+
+            <div ng-repeat="article in tags">
+              <p>
+                <a href="#/getid/{{article.id}}">
+                  <h4>[{{$index + 1}}] {{article.title}}</h4>
+                </a>
+              </p>
+              <p>
+                <h5>{{article.content}}</h5>
+              </p>
+              <p>{{article.timestamp}}</p>
+            </div>
+          </div>

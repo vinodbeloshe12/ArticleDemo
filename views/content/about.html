@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row" ng-repeat="products2 in products">
+    <div class="col-xs-3" ng-repeat="product in products2">
+      <h5>{{product.name}}</h5>
+      <a href="#/product/{{product.id}}">
+        <img ng-src="{{'http://accessworld.in/admin/uploads/'+product.image1}}" style="width:100%;">
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <tit.col-xs-12 .col-xs-8le>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Hello World!</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="row" style="border:1px solid black;border-bottom:none">
+   <div class="col-xs-12" style="background-color:yellow;">hello</div>
+    <<div class="col-xs-12 col-xs-8" style="background-color:red;">.col-xs-12 .col-xs-8</div>
+    <div class="col-xs-6 col-xs-4" style="background-color:blue;">hello .col-xs-4</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8" style="background-color:yellow;">hello</div>
+    <div class="col-xs-4" style="background-color:white;">hello</div>
+  </div>
+  <div class="row" style="background-color:lavenderblush;">
+    <div class="col-xs-4">hello</div>
+   <div class="col-xs-4">hello</div>
+    <div class="col-xs-4">hello </div>
+  </div>
+  <div class="row" style="background-color:lightcyan;">
+    <div class="col-xs-6">hello</div>
+    <div class="col-xs-6">hello</div>
+  </div>
+</div>
+
+<div class="row" style="border:1px solid black">
+  <div class="col-xs-8">hello</div>
+  <div class="col-xs-4">hello</div>
+  <div class="row" >
+    <div class="col-xs-6">hello</div>
+    <div class="col-xs-6">hello</div>
+  </div>
+<div class="row" >
+  <div class="col-xs-6">hello</div>
+  <div class="col-xs-6">hello</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <tit.col-xs-12 .col-md-8le>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Hello World!</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="row" style="background-color:lavender;">
+    <div class="col-xs-12 col-xs-8" style="background-color:red;">hello</div>
+    <div class="col-xs-4" style="background-color:blue;">col-xs-4</div>
+    <div class="col-md-8" style="background-color:yellow;">.col-md-8</div>
+    <div class="col-md-4" style="background-color:blue;">.col-md-4</div>
+    <div class="col-xs-12 col-md-8" style="background-color:green;border:1px solid black;">.col-xs-12 .col-md-8</div>
+    <div class="col-xs-6 col-md-4" style="background-color:blue;border:1px solid black;">.col-xs-6 .col-md-4</div>
+    <div class="col-md-6 col-xs-8" style="background-color:red;border:1px solid black;">.col-xs-12 .col-md-8</div>
+    <div class="col-md-4 col-xs-4" style="background-color:blue;border:1px solid black;">.col-xs-6 .col-md-4</div>
+  </div>
+
+</div>
+
+</body>
+</html>

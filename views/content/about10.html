@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row" ng-repeat="product2 in product">
+    <div class="col-md-2" ng-repeat="products in product2">
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>
+    <h5><strong><center> {{products.name}}</center></strong> </h5></th></tr></thead>
+    <tbody>
+      <tr class="info"><td>
+    <h5><center>{{products.price|currency}}</center></h5></td></tr>
+    <tr class="active"><td>
+  <center>  <a href="#/product10/{{products.id}}">
+  <img class="img=responsive" ng-src="{{'http://accessworld.in/admin/uploads/'+products.image1}}" style="width:50%">
+</center>  </a></td></tr></tbody>
+  </div>
+</div>
+</div>
